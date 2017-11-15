@@ -25,6 +25,9 @@ class PlayData {
             wordCounts.count(for: $0) > wordCounts.count(for: $1)
         }
         allWords = sorted as! [String]
+        
+//        filteredWords = allWords
+        applyUserFilter("swift")
     }
     
     func applyUserFilter(_ input: String) {
