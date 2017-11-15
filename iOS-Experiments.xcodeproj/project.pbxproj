@@ -14,6 +14,7 @@
 		3EAE375C1FBC18100020ADFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE375A1FBC18100020ADFE /* LaunchScreen.storyboard */; };
 		3EAE37641FBC1CEA0020ADFE /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE37631FBC1CEA0020ADFE /* PlayData.swift */; };
 		3EAE376C1FBC1F360020ADFE /* iOS_ExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE376B1FBC1F360020ADFE /* iOS_ExperimentsTests.swift */; };
+		3EAE37751FBC23A00020ADFE /* plays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE37741FBC23A00020ADFE /* plays.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3EAE37691FBC1F360020ADFE /* iOS-ExperimentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ExperimentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAE376B1FBC1F360020ADFE /* iOS_ExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ExperimentsTests.swift; sourceTree = "<group>"; };
 		3EAE376D1FBC1F360020ADFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EAE37741FBC23A00020ADFE /* plays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plays.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3EAE37501FBC18100020ADFE /* iOS-Experiments */,
+				3EAE37761FBC23F30020ADFE /* Resources */,
 				3EAE376A1FBC1F360020ADFE /* iOS-ExperimentsTests */,
 				3EAE374F1FBC18100020ADFE /* Products */,
 			);
@@ -97,6 +100,14 @@
 				3EAE376D1FBC1F360020ADFE /* Info.plist */,
 			);
 			path = "iOS-ExperimentsTests";
+			sourceTree = "<group>";
+		};
+		3EAE37761FBC23F30020ADFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE37741FBC23A00020ADFE /* plays.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAE37751FBC23A00020ADFE /* plays.txt in Resources */,
 				3EAE375C1FBC18100020ADFE /* LaunchScreen.storyboard in Resources */,
 				3EAE37591FBC18100020ADFE /* Assets.xcassets in Resources */,
 				3EAE37571FBC18100020ADFE /* Main.storyboard in Resources */,
