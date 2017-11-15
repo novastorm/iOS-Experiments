@@ -11,6 +11,7 @@ import Foundation
 class PlayData {
     var allWords = [String]()
     var wordCounts: NSCountedSet!
+    var filteredWords = [String]()
     
     init() {
         guard let path = Bundle.main.path(forResource: "plays", ofType: "txt") else { return }
@@ -20,6 +21,9 @@ class PlayData {
         allWords = allWords.filter { $0 != "" }
         
         wordCounts = NSCountedSet(array: allWords)
-        allWords = wordCounts.allObjects as! [String]
+        let sorted = wordCounts.allObjects.sorted {
+            wordCounts.count(for: $0) > wordCounts.count(for: $1)
+        }
+        allWords = sorted as! [String]
     }
 }
