@@ -11,17 +11,24 @@ import UIKit
 class TableViewController: UITableViewController {
 
     var playData = PlayData()
+
+    // MARK: Actions
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func searchTapped() {
+        let ac = UIAlertController(title: "Filter...", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        
+        ac.addAction(UIAlertAction(title: "Filter", style: .default) { [unowned self] _ in
+            let userInput = ac.textFields?[0].text ?? "0"
+            self.playData.applyUserFilter(userInput)
+            self.tableView.reloadData()
+        })
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(ac, animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return playData.filteredWords.count
     }

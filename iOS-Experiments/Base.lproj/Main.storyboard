@@ -48,7 +48,13 @@
                             <outlet property="delegate" destination="7Vy-Pb-ieS" id="kx6-Lb-zYf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="k6V-5o-rds"/>
+                    <navigationItem key="navigationItem" id="k6V-5o-rds">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Jcz-R3-mFz">
+                            <connections>
+                                <action selector="searchTapped" destination="7Vy-Pb-ieS" id="2OF-Hs-dyv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4c-hI-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
