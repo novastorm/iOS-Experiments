@@ -11,7 +11,7 @@ import Foundation
 class PlayData {
     var allWords = [String]()
     var wordCounts: NSCountedSet!
-    var filteredWords = [String]()
+    private(set) var filteredWords = [String]()
     
     init() {
         guard let path = Bundle.main.path(forResource: "plays", ofType: "txt") else { return }
