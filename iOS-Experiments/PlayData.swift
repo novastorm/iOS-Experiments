@@ -26,4 +26,13 @@ class PlayData {
         }
         allWords = sorted as! [String]
     }
+    
+    func applyUserFilter(_ input: String) {
+        if let userNumber = Int(input) {
+            filteredWords = allWords.filter { self.wordCounts.count(for: $0) >= userNumber }
+        }
+        else {
+            filteredWords = allWords.filter { $0.range(of: input, options: .caseInsensitive) != nil }
+        }
+    }
 }
