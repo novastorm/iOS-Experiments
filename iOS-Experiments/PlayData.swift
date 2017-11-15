@@ -10,7 +10,7 @@ import Foundation
 
 class PlayData {
     var allWords = [String]()
-    var wordCounts = [String: Int]()
+    var wordCounts: NSCountedSet!
     
     init() {
         guard let path = Bundle.main.path(forResource: "plays", ofType: "txt") else { return }
@@ -19,14 +19,7 @@ class PlayData {
         allWords = plays.components(separatedBy: CharacterSet.alphanumerics.inverted)
         allWords = allWords.filter { $0 != "" }
         
-        for word in allWords {
-            if wordCounts[word] == nil {
-                wordCounts[word] = 0
-            }
-            
-            wordCounts[word]! += 1
-        }
-        
-        allWords = Array(wordCounts.keys)
+        wordCounts = NSCountedSet(array: allWords)
+        allWords = wordCounts.allObjects as! [String]
     }
 }

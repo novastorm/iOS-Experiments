@@ -28,9 +28,9 @@ class iOS_ExperimentsTests: XCTestCase {
     
     func testWordCountsAreCorrect() {
         let playData = PlayData()
-        XCTAssertEqual(playData.wordCounts["home"], 174, "home does not appear 174 times")
-        XCTAssertEqual(playData.wordCounts["fun"], 4, "fun does not appear 4 times")
-        XCTAssertEqual(playData.wordCounts["mortal"], 41, "mortal does not appear 41 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "home"), 174, "home does not appear 174 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "fun"), 4, "fun does not appear 4 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "mortal"), 41, "mortal does not appear 41 times")
     }
     
     func testWordsLoadQuickly() {
