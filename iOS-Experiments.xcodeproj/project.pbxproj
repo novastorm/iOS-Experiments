@@ -15,10 +15,18 @@
 		3EAE37641FBC1CEA0020ADFE /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE37631FBC1CEA0020ADFE /* PlayData.swift */; };
 		3EAE376C1FBC1F360020ADFE /* iOS_ExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE376B1FBC1F360020ADFE /* iOS_ExperimentsTests.swift */; };
 		3EAE37751FBC23A00020ADFE /* plays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE37741FBC23A00020ADFE /* plays.txt */; };
+		3EAE377E1FBC35260020ADFE /* iOS_ExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE377D1FBC35260020ADFE /* iOS_ExperimentsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3EAE376E1FBC1F360020ADFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EAE37461FBC18100020ADFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EAE374D1FBC18100020ADFE;
+			remoteInfo = "iOS-Experiments";
+		};
+		3EAE37801FBC35260020ADFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3EAE37461FBC18100020ADFE /* Project object */;
 			proxyType = 1;
@@ -40,6 +48,9 @@
 		3EAE376B1FBC1F360020ADFE /* iOS_ExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ExperimentsTests.swift; sourceTree = "<group>"; };
 		3EAE376D1FBC1F360020ADFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EAE37741FBC23A00020ADFE /* plays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plays.txt; sourceTree = "<group>"; };
+		3EAE377B1FBC35260020ADFE /* iOS-ExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ExperimentsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EAE377D1FBC35260020ADFE /* iOS_ExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ExperimentsUITests.swift; sourceTree = "<group>"; };
+		3EAE377F1FBC35260020ADFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EAE37781FBC35260020ADFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +84,7 @@
 				3EAE37501FBC18100020ADFE /* iOS-Experiments */,
 				3EAE37761FBC23F30020ADFE /* Resources */,
 				3EAE376A1FBC1F360020ADFE /* iOS-ExperimentsTests */,
+				3EAE377C1FBC35260020ADFE /* iOS-ExperimentsUITests */,
 				3EAE374F1FBC18100020ADFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +94,7 @@
 			children = (
 				3EAE374E1FBC18100020ADFE /* iOS-Experiments.app */,
 				3EAE37691FBC1F360020ADFE /* iOS-ExperimentsTests.xctest */,
+				3EAE377B1FBC35260020ADFE /* iOS-ExperimentsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +128,15 @@
 				3EAE37741FBC23A00020ADFE /* plays.txt */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EAE377C1FBC35260020ADFE /* iOS-ExperimentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE377D1FBC35260020ADFE /* iOS_ExperimentsUITests.swift */,
+				3EAE377F1FBC35260020ADFE /* Info.plist */,
+			);
+			path = "iOS-ExperimentsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +177,24 @@
 			productReference = 3EAE37691FBC1F360020ADFE /* iOS-ExperimentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3EAE377A1FBC35260020ADFE /* iOS-ExperimentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EAE37821FBC35260020ADFE /* Build configuration list for PBXNativeTarget "iOS-ExperimentsUITests" */;
+			buildPhases = (
+				3EAE37771FBC35260020ADFE /* Sources */,
+				3EAE37781FBC35260020ADFE /* Frameworks */,
+				3EAE37791FBC35260020ADFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EAE37811FBC35260020ADFE /* PBXTargetDependency */,
+			);
+			name = "iOS-ExperimentsUITests";
+			productName = "iOS-ExperimentsUITests";
+			productReference = 3EAE377B1FBC35260020ADFE /* iOS-ExperimentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +210,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					3EAE37681FBC1F360020ADFE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EAE374D1FBC18100020ADFE;
+					};
+					3EAE377A1FBC35260020ADFE = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3EAE374D1FBC18100020ADFE;
@@ -184,6 +236,7 @@
 			targets = (
 				3EAE374D1FBC18100020ADFE /* iOS-Experiments */,
 				3EAE37681FBC1F360020ADFE /* iOS-ExperimentsTests */,
+				3EAE377A1FBC35260020ADFE /* iOS-ExperimentsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +254,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3EAE37671FBC1F360020ADFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAE37791FBC35260020ADFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,6 +288,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EAE37771FBC35260020ADFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAE377E1FBC35260020ADFE /* iOS_ExperimentsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -235,6 +303,11 @@
 			isa = PBXTargetDependency;
 			target = 3EAE374D1FBC18100020ADFE /* iOS-Experiments */;
 			targetProxy = 3EAE376E1FBC1F360020ADFE /* PBXContainerItemProxy */;
+		};
+		3EAE37811FBC35260020ADFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EAE374D1FBC18100020ADFE /* iOS-Experiments */;
+			targetProxy = 3EAE37801FBC35260020ADFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +500,36 @@
 			};
 			name = Release;
 		};
+		3EAE37831FBC35260020ADFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KY9W9NLJDU;
+				INFOPLIST_FILE = "iOS-ExperimentsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mfd.project.iOS-ExperimentsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-Experiments";
+			};
+			name = Debug;
+		};
+		3EAE37841FBC35260020ADFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KY9W9NLJDU;
+				INFOPLIST_FILE = "iOS-ExperimentsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.4mfd.project.iOS-ExperimentsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-Experiments";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +556,15 @@
 			buildConfigurations = (
 				3EAE37711FBC1F360020ADFE /* Debug */,
 				3EAE37721FBC1F360020ADFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EAE37821FBC35260020ADFE /* Build configuration list for PBXNativeTarget "iOS-ExperimentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAE37831FBC35260020ADFE /* Debug */,
+				3EAE37841FBC35260020ADFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
